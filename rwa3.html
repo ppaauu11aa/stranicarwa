@@ -1,0 +1,65 @@
+<html>
+<body>
+1.
+a)	Pokreće li vaš preglednik HTTP verziju 1.0 ili 1.1? </br>
+HTTP/1.1</br>
+
+b)	Koja je verzija HTTP-a poslužitelja pokrenuta kad pristupite npr sa sum.ba?</br>
+HTTP/2</br>
+
+c)	Koje jezike (ako postoje) vaš preglednik pokazuje da može prihvatiti na poslužitelju?</br>
+hr-HR,hr;q=0.9,en-US;q=0.8,en;q=0.7</br>
+
+d)	Koja je IP adresa vašeg računala? A koja je IP adresa sum.ba?</br>
+
+Adsresa mog racunala je 172.14.0.126,a sum.ba je 212.39.111.33</br>
+
+
+e)	Kada je HTML datoteka koju dohvaćate zadnji put modificirana na poslužitelju?</br>
+Thu, 03 Dec 1992 08:37:20 GMT</br>
+
+f)	Koliko se bajtova sadržaja vraća u vaš preglednik?</br>
+2560b</br>
+
+g)	Koji softver/web poslužitelj  poslužje web stranicu na server,navedite odakle vidite?</br>
+
+Server:Apache</br>
+
+
+h)	Koje jezike vaš web preglednik može prihvatiti?</br>
+hr-HR,hr;q=0.9,en-US;q=0.8,en;q=0.7
+</br></br></br></br></br></br></br>
+2.2. Pristup različitim resursima</br>
+
+Pristupite sljedećim resursima te za svaki resurs napišite HTTP odgovor koji dobijete (bez tijela), te za svaki resurs odgovorite:</br>
+
+a)	kojem MIME formatu resursa se radi:</br>
+b)	kolika je veličina resursa (u byte-ima)</br>
+c)	koja je verzija HTTP poslužitelja</br>
+
+
+Resursi su:</br>
+1)	http://web-admin.sum.ba/api/storage/pravilnik_mobilnost_1552858671_80.pdf</br>
+2)	https://eucenje.sum.ba/moodle/pluginfile.php/1/core_admin/logocompact/300x300/1698654623/Logo%20sumarum.png</br>
+3)	https://mirrors.edge.kernel.org/linuxmint/stable/10/sha256sum.txt</br>
+
+1. HTTP/1.1 200 OK</br>
+ content-type:</br>
+application/pdf</br>
+server:</br>
+Apache/2.4.29 (Ubuntu)</br>
+
+2. HTTP/1.1 200 OK </br>
+a)content-type:</br>
+image/png </br>
+b) content-length:</br>
+15684</br>
+c)nginx/1.14.0 (Ubuntu)</br>
+
+3.
+ 404 Not Found</br>
+content-type:</br>
+text/html; </br>
+Server: nginx</br>
+</body>
+</html>
